@@ -2,6 +2,8 @@ def add(a,b) # ADDITION function
     return a + b
 def subtract(a, b): # SUBTRACTION function
     return a - b 
+def divide(a, b) # DIVISION function
+    return a / b
 
 while True:
     try:
@@ -23,6 +25,9 @@ while True:
         elif choice == "2":
             result = subtract(num1, num2)
             print(f"Result: {result}")
+        elif choice == "4":
+            result = divide(num1, num2)
+            print(f"Result: {result}")
         else:
             print("Invalid choice. Please select from 1, 2, 3, 4.")
         
@@ -34,4 +39,11 @@ while True:
     if cont not in ("y", "yes"):
         break
     print("Calculator closed.")
+    
+
+    # git add .
+    # git config user.name "username"
+    # git config user.email "user email"
+    # git commit -m "achuchu"
+    # git push
     
