@@ -1,8 +1,10 @@
 3. Table
-| Method           | Execution Order        | GWA Output            | Execution Time |
-|------------------|------------------------|-----------------------|----------------|
-| Multithreading   | Non-deterministic      |    82.38              | 0.1032 seconds |
-| Multiprocessing  | Non-deterministic      | Correct GWA displayed |                |
+| Method           | Execution Order                | GWA Output                             | Execution Time |
+|------------------|--------------------------------|----------------------------------------|----------------|
+| Multithreading   | 3 -> 1 -> 4 -> 2 -> 5 (Random) |  2.12, 88.75, 91.00, 84.00, 76.25      |Average = 0.5144 ÷ 5 = 0.10288 
+| Multiprocessing  | Non-deterministic              | Correct GWA displayed |                |
+
+- 
 
 
 4. README.md Questions
