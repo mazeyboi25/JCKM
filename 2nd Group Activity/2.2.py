@@ -39,5 +39,10 @@ if __name__ == "__main__":
                 
     print("Final GWA:", sum(results.values()) / len(results))
                 
+# Each subject grade in the multiprocessing version is handled by a separate process that runs independently from the others.
+# When all processes are started, the operating system schedules them to run in parallel, so their execution and completion
+# times may vary. This causes the output to appear in a non-deterministic order, with each process printing its result as soon
+# as it finishes. After all processes have completed, the main process collects the results and computes the final GWA,
+# ensuring that all subject grades are included in the final output.
 
     
