@@ -32,16 +32,13 @@ with ThreadPoolExecutor(max_workers=4) as executor:
 
 print("Results retrieved successfully.")
 
-# 4️⃣ Compute total deduction
 total_deduction = sss + philhealth + pagibig + tax
 
-# 5️⃣ Display each deduction clearly
 print("\nDeduction Breakdown:")
 print(f"SSS: {sss:.2f}")
 print(f"PhilHealth: {philhealth:.2f}")
 print(f"Pag-IBIG: {pagibig:.2f}")
 print(f"Withholding Tax: {tax:.2f}")
 
-# 6️⃣ Display total deduction
 print(f"\nTotal Deduction: {total_deduction:.2f}")
 
